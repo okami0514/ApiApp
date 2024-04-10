@@ -47,10 +47,9 @@ class MainActivity : AppCompatActivity(), FragmentCallback {
         })
     }
 
-    override fun onClickItem(shop: Shop) {
-        WebViewActivity.start(this, if (shop.couponUrls.sp.isNotEmpty()) shop.couponUrls.sp else shop.couponUrls.pc)
+    override fun onClickItem(url: String) {
+        WebViewActivity.start(this, url)
     }
-
     /**
      * お気に入りタブにトーストを表示
      */
