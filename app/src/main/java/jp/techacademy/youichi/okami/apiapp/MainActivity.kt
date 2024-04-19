@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), FragmentCallback {
     }
 
     override fun onClickItem(url: String, id: String, name: String, address: String, imageUrl: String) {
-        WebViewActivity.start(this, url)
+        WebViewActivity.start(this, url, id, name, address, imageUrl)
     }
 
     /**

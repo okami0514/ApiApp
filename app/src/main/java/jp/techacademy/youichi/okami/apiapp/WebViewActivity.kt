@@ -19,7 +19,7 @@ class WebViewActivity : AppCompatActivity() {
 
     companion object {
         private const val KEY_URL = "key_url"
-        fun start(activity: Activity, url: String) {
+        fun start(activity: Activity, url: String, id: String, name: String, address: String, imageUrl: String) {
             activity.startActivity(
                 Intent(activity, WebViewActivity::class.java).putExtra(
                     KEY_URL,
